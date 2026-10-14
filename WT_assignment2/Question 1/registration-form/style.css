@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e8f0fe;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 450px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #1a56db;
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #1a56db;
+  box-shadow: 0 0 4px #1a56db;
+}
+
+input.invalid, select.invalid { border-color: #d93025; }
+input.valid, select.valid { border-color: #1e8e3e; }
+
+.error {
+  color: #d93025;
+  font-size: 13px;
+  display: block;
+  min-height: 16px;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #1a56db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover { background: #1445b0; }
+
+.success {
+  color: #1e8e3e;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container { padding: 18px; margin: 10px auto; }
+  h1 { font-size: 22px; }
+}

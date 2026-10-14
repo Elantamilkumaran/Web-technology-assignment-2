@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f2f5fa; color: #222; }
+
+.navbar { background: #1a56db; color: #fff; padding: 12px 25px; display: flex;
+          justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.navbar h2 { margin: 0; }
+.navbar a { color: #fff; text-decoration: none; font-weight: bold; margin-left: 15px; }
+.navbar span { font-size: 14px; }
+
+.container { max-width: 950px; margin: 25px auto; padding: 0 15px; }
+
+/* Student cards */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+.card { background: #fff; border-radius: 8px; padding: 18px; text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,.12); }
+.card h3 { margin: 10px 0 4px; }
+.card p { margin: 3px 0; font-size: 14px; color: #555; }
+.avatar { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid #e8f0fe; }
+.avatar.empty { display: flex; align-items: center; justify-content: center; margin: 0 auto;
+                background: #e5e7eb; color: #777; font-size: 13px; }
+
+.btn { display: inline-block; margin-top: 10px; padding: 7px 14px; background: #1a56db; color: #fff;
+       border: none; border-radius: 4px; text-decoration: none; font-size: 14px; cursor: pointer; }
+.btn.gray { background: #6b7280; }
+
+/* Profile page */
+.panel { background: #fff; border-radius: 8px; padding: 20px 25px; margin-bottom: 20px;
+         box-shadow: 0 2px 6px rgba(0,0,0,.12); }
+.profile { display: flex; gap: 25px; align-items: center; flex-wrap: wrap; }
+.profile .avatar { width: 130px; height: 130px; border-radius: 8px; margin: 0; }
+.profile p { margin: 6px 0; }
+
+.files { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+.file { border: 1px solid #ddd; border-radius: 6px; padding: 10px; text-align: center; font-size: 13px; }
+.file img { max-width: 100%; max-height: 130px; border-radius: 4px; }
+.pdf { height: 100px; display: flex; align-items: center; justify-content: center;
+       background: #fdecea; color: #b3261e; font-weight: bold; border-radius: 4px; }
+
+/* Login */
+.login { max-width: 360px; margin: 70px auto; background: #fff; padding: 25px 30px; border-radius: 10px;
+         box-shadow: 0 4px 12px rgba(0,0,0,.15); }
+.login h2 { text-align: center; color: #1a56db; margin-top: 0; }
+.login label { display: block; margin-top: 14px; font-weight: bold; font-size: 14px; }
+.login input { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #aaa; border-radius: 5px; font-size: 15px; }
+.login button { width: 100%; margin-top: 20px; padding: 11px; background: #1a56db; color: #fff;
+                border: none; border-radius: 5px; font-size: 16px; cursor: pointer; }
+.hint { text-align: center; font-size: 13px; color: #777; margin-top: 15px; }
+
+.alert { padding: 10px 14px; border-radius: 5px; margin-bottom: 12px; font-size: 14px; }
+.alert.error { background: #f8d7da; color: #721c24; }
+.alert.info  { background: #dbeafe; color: #1e3a8a; }
+.empty-msg { text-align: center; color: #777; padding: 30px; }
